@@ -1,0 +1,12 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# Eclipse
+.settings/
+.project

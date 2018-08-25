@@ -74,11 +74,11 @@ public class GoogleSpreadsheetOutputMeta extends BaseStepMeta implements StepMet
     }
 
     public String getWorksheetId() {
-        return this.worksheetId == null ? "" : this.worksheetId;
+        return this.worksheetId == null ? "" : environmentSubstitute ( this.worksheetId );
     }
 
     public void setWorksheetId(String id) {
-        this.worksheetId = id;
+        this.worksheetId = environmentSubstitute ( id );
     }
 
     @Override
